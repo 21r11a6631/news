@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>News Classifier</h1>
+        <form action="/predict" method="post">
+            <label for="news">Enter news:</label><br>
+            <textarea id="news" name="news" rows="10" cols="50" placeholder="Paste your news article here..."></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
